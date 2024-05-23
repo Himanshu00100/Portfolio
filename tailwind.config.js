@@ -1,0 +1,121 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["*.html", "./*.js"],
+  theme: {
+    extend: {
+      keyframes:{
+        textloop:{
+          "0%" :{ "translatex": "0" },
+          "100%" :{ "translatex": "-200%" },
+        },
+      },
+      screens:{
+        fold: '280px',
+        fold2: '343px',
+        phone: '430px',
+        tab: '563px',
+        "4k":'4000px'
+
+      },
+      animation: {
+        'textloop': 'textloop 20s linear infinite',
+      },
+      
+      spacing: {
+        0.75: "3px",
+        0.25: "1px",
+        1.25: "0.32rem",
+        1.9: "6px",
+        2.6: "10.7px",
+        2.75: "15px",
+        3.25: "13px",
+        3.75: "15px",
+        4.25: "20px",
+        11.5: "46px",
+        13: "52.5px",
+        15: "3.75rem",
+        17: "70px",
+        21: "82px",
+        23: "90px",
+        26: "108px",
+        29: "123px",
+        30: "121px",
+        33: "8.35rem",
+        43: "170px",
+        90: "370px",
+        100: "27rem",
+        104: "440px",
+        105: "510px",
+        105.5: "526px",
+        106: "610px",
+        110: "39.85rem",
+        111: "40.11rem",
+        115: "45.7rem",
+        117: "46.2rem",
+        118: "46.4rem",
+        120: "53.65rem",
+        125: "55rem",
+        130: "63rem",
+        140: "1200px",
+        nav: "1280px",
+        keys: "565.375px",
+        7.5: "1.82rem",
+        7.75: "1.92rem",
+        8.25: "33px",
+        8.5: "2.15rem",
+        8.6: "36px",
+        10.25: "2.6rem",
+        97: "24.85rem",
+        45: "12rem",
+        49: "12.2rem",
+        50: "200px",
+        50: "200px",
+        51: "12.8rem",
+        53: "13.8rem",
+        62: "248px",
+        200: "1800px",
+      },
+      height:{
+        "1/10":"10%",
+        "2/10":"20%",
+        "3/10":"30%",
+        "4/10":"40%",
+        "5/10":"50%",
+        "6/10":"60%",
+        "7/10":"70%",
+        "8/10":"80%",
+        "9/10":"90%",
+        "10/10":"100%",
+
+      },
+
+      borderWidth: {
+        0.25: "0.1px",
+        0.5: "0.5px",
+        3: "3.5px",
+      },
+      boxShadow: {
+        ssm: "0 1px 1px 0 rgb(0 0 0 / 0.05)",
+      },
+      padding: {
+        5.75: "15px",
+      },
+      fontSize: {
+        xxs: ["10px", { lineHeight: "0.8rem" }],
+        xxxs: ["12px", { lineHeight: "0.8rem" }],
+        xxxxs: ["13px", { lineHeight: "0.8rem" }],
+      },
+      fontFamily: {
+        roboto: ["Roboto"],
+        lobster: ["Lobster"],
+        galada :["Galada"],
+        courgette: ["Courgette"],
+        "fleur de leah" :["Fleur De Leah","Cursive"],
+        "my soul": ['My Soul'],
+        splash : ["Splash"]
+      },
+      
+    },
+  },
+  plugins: [],
+};

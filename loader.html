@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>loader</title>
+    <style>
+
+
+div.tl1{
+    animation-name:left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease;
+    /* transition:all 3s; */
+}
+
+
+
+@keyframes left {
+  from {
+    translate: 0%;
+}
+  to {translate: -100% 0%;
+    
+     
+}
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="w-screen h-screen flex bg-white abolute">
+        <div class="w-3/12 h-full bg-white relative overflow-hidden">
+            <div  class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20 animate-left"></div>
+        </div>
+        <div class="w-3/12 h-full bg-white relative overflow-hidden">
+            <div  class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+        </div>
+        <div class="w-3/12 h-full bg-white relative overflow-hidden">
+            <div  class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+        </div>
+        <div class="w-3/12 h-full bg-white relative overflow-hidden">
+            <div  class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+        </div>
+    </div>
+
+
+
+    
+    
+</body>
+</html>

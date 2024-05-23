@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Great+Vibes&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    /* font-family: "Oleo Script", system-ui; */
+    font-family: "lobster", sans-serif;
+}
+footer {
+    background-color: #141412;
+}
+
+div.tl1{
+    animation-name:left;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+    /* transition:all 3s; */
+}
+@keyframes  left{
+  from {
+    translate: 0%;
+}
+  to {translate: -100% 0%;  
+}
+}
+
+#loader{
+  width:95%;
+  height:95%;
+}

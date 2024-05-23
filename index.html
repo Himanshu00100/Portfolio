@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="ico/png" href="/Assets/logo/logo.png">
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./src/external.css">
+  <title>Portfolio</title>
+  <style>
+
+  </style>
+</head>
+
+<body class="bg-gray-200  selection:bg-blue-400  selection:text-white overflow-x-hidden ">
+
+  <div
+    class="loaderscreen flex fixed top-0 w-screen  justify-center items-center h-screen    z-50 transition-opacity-all duration-1000 ">
+    <div class="w-3/12 h-full bg-white relative overflow-hidden">
+      <div class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20 animate-left"></div>
+    </div>
+    <div class="w-3/12 h-full bg-white relative overflow-hidden">
+      <div class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+    </div>
+    <div class="w-3/12 h-full bg-white relative overflow-hidden">
+      <div class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+    </div>
+    <div class="w-3/12 h-full bg-white relative overflow-hidden">
+      <div class=" tl1 w-full h-full absolute bg-blue-500 -right-full z-20"></div>
+    </div>
+
+
+    <div class=" absolute     flex flex-col gap-y-10 justify-center items-center">
+      <div class="w-80   flex justify-center items-center">
+        <div
+          class="bg-gray-300 w-30 h-30 rounded-full p-1.25 flex overflow-hidden relative justify-center items-center">
+          <span class="w-20 h-full   absolute bg-gradient-to-b from-blue-700 to-transparent animate-spin "></span>
+          <div id="loader" class="bg-white w- h-full rounded-full absolute "></div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center relative">
+        <img class="w-53" src="./Assets/logo/DZ.png" alt="">
+        <img class="w-10 bg-white absolute top-2/4 animate-bounce" src="./Assets/logo/DZ.png" alt="">
+      </div>
+
+      <h1 class="text-2xl font-roboto font-semibold relative animate-pulse">LOADING...</h1>
+    </div>
+  </div>
+
+  <div id="successful"
+    class=" w-full  justify-center items-center fixed top-10 hidden  z-0 transition-all duration-1000 opacity-100">
+    <div
+      class="flex justify-center items-center absolute z-20 outline outline-2 outline-green-500 bg-green-300 p-5 rounded-md gap-x-3">
+      <h1 class="font-roboto text-green-black">Message sent successful!!</h1>
+      <i class="fa-solid fa-check fa-bounce text-green-500 text-xl p-1.25 bg-white rounded-full"></i>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="bigwrapper ">
+    <div class="wrapper  ">
+
+      // form submit messagebox starts from here
+
+
+
+      <!-- header starts from here  -->
+
+
+      <header id="" class=" header bg-gray-200 h-15 phone:h-21 w-full flex justify-center fixed top-0 z-10 ">
+        <nav class="w-nav height-full  flex justify-center  items-center relative ">
+          <div class="absolute  left-10 md:left-5 ">
+            <img class="w-15   " src="./Assets/logo/DZ.png" alt="">
+          </div>
+          <div
+            class="h-full w-keys bg-gray-200 text-lg justify-center text-md  items-center gap-x-10 font-semibold text-gray-800 hidden  md:flex md:px-10 lg:px-0">
+            <div id="homekey" class="home relative cursor-pointer">
+              <h1>Home</h1>
+              <span class="underline1 absolute bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline1 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+            <div id="aboutkey" class="about relative cursor-pointer">
+              <h1>About</h1>
+              <span class="underline2 absolute w-0 bottom-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline2 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+
+            <div id="resumekey" class="resume relative cursor-pointer">
+              <h1>Resume</h1>
+              <span class="underline5 absolute w-0 bottom-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline5 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+
+
+            <div id="skillskey" class="skills relative">
+              <h1>Skills</h1>
+              <span class="underline3 absolute w-0 bottom-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline3 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+
+            <div id="projectkey" class="project relative cursor-pointer">
+              <h1>Projects</h1>
+              <span class="underline6 absolute w-0 bottom-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline6 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+
+
+            <div id="contactkey" class="contact relative">
+              <h1>Contact</h1>
+              <span class="underline4 absolute w-0 bottom-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+              <span
+                class="aboveline4 absolute -top-0.5 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+            </div>
+          </div>
+          <div
+            class="menu bg-blue-500 cursor-pointer flex justify-center items-center gap-x-3 absolute right-5 phone:right-6 md:right-4  hover:shadow-yellow-500 transition-all duration-300 rounded-full shadow-lg shadow-blue-500 px-2.5 py-0.5 phone:px-5 phone:py-1.5">
+            <h1 class="text-white">Menu</h1>
+            <i class="fa-solid fa-ellipsis-vertical text-white text-sm phone:text-2xl"></i>
+          </div>
+        </nav>
+        <div
+          class="menuslider absolute bg-white -right-[102%] w-screen h-screen  transition-all duration-500 ease-out shadow-md z-50">
+          <div class="w-full h-full relative flex justify-center items-center z-50">
+            <div
+              class="flex justify-center items-center absolute right-5 top-5   phone:right-3 phone:top-3 lg:right-14 lg:top-10 z-20">
+              <img class="cancel w-5 phone:w-6 tab:w-8 lg:w-10 hover:scale-125 duration-200"
+                src="./Assets/icons/cancel.png" alt="" />
+            </div>
+            <div
+              class="sidebar-content  flex-col phone:text-4xl gap-y-6 flex justify-center items-center z-0 tab:z-20 ">
+              <div
+                class=" w-50  phone:w-80  flex flex-col phone:flex-row justify-center items-center  gap-y-2  phone:gap-y-0    sm:gap-x-20 md:gap-x-40 lg:gap-x-50 px-40 pb-10  phone:py-0 phone:px-2 tab:px-0 ">
+                <div class=" w-5/12  h-full  phone:gap-y-0 flex flex-col gap-y-3">
+                  <div class="w-full phone:h-26  flex justify-center  items-center phone:justify-start  ">
+                    <div class="   font-semibold hover:text-blue-600 duration-200 ">
+                      <h1
+                        class="flipitem  transition-all duration-200 phone:text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+                        HOME</h1>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center  ">
+                    <div class=" flipitem font-semibold hover:text-blue-600 duration-200 ">
+                      <h1 class="text-nowrap phone:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">ABOUT Me</h1>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center   ">
+                    <div class="flipitem font-semibold ml-2 phone:ml-0 hover:text-blue-600 duration-200 ">
+                      <h1 class="phone:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">SKILLS</h1>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center  ">
+                    <div class="flipitem font-semibold hover:text-blue-600 duration-200  ">
+                      <h1 class="text-nowrap phone:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">CONTACT Me</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-6/12 h-full   flex flex-col gap-y-3 phone:gap-y-0 pb-2 phone:pb-0">
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center">
+                    <div class=" flex text-center phone:text-left   flex-col ">
+                      <h1 class="flipditem text-sm font-semibold sm:text-lg md:text-2xl">PHONE</h1>
+                      <p
+                        class="flipditem text-sm hover:text-blue-300 duration-200 text-gray-500 text-nowrap sm:text-lg">
+                        +91 9625597007</p>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center">
+                    <div class="  flex-col gap-y- text-left phone:text-left  phone:flex ">
+                      <h1 class="flipitem text-sm font-semibold sm:text-lg md:text-2xl">ADDRESS:</h1>
+                      <p class="flipitem text-lg hover:text-blue-300 duration-200 text-gray-500 text-nowrap sm:text-lg">
+                        New Delhi</p>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex phone:justify-start justify-center items-center">
+                    <div class=" flex flex-col  phone:text-left  phone:pr-5 text-center">
+                      <h1 class="flipitemflipitem  text-sm phone:text-lg font-semibold sm:text-lg md:text-2xl">EMAIL:
+                      </h1>
+                      <p class="flipitem text-sm hover:text-blue-300 duration-200 text-wrap text-gray-500 sm:text-lg">
+                        himanshu.hk88@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="w-full phone:h-26 flex  phone:justify-start justify-center items-center">
+                    <div class="flex flex-col text-left">
+                      <!-- <h1 class="flipitem text-sm phone:text-2xl font-semibold"> -->
+                      <h1 class=" text-nowrap font-semibold sm:text-lg md:text-2xl">FOLLOW ME:</h1>
+                      <div class="text-lg flex gap-x-3  text-center">
+                        <a href="https://github.com/Himanshu00100?tab=repositories"><i
+                            class="flipitem fa-brands fa-github hover:text-blue-300 duration-200"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dz_harryy/?img_index=5">
+                          <i class="flipitem fa-brands fa-instagram hover:text-blue-300 duration-200 "></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/">
+                          <i class="flipitem fa-brands fa-linkedin-in hover:text-blue-300 duration-200"></i>
+                        </a>
+                        <a href="#">
+                          <i class="flipitem fa-sharp fa-solid fa-hashtag hover:text-blue-300 duration-200"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- header ends here -->
+
+
+    <!-- main starts from here -->
+
+
+    <div class="wrapper2 mt-15 phone:mt-20 md:mt-24  lg:mt-24 ">
+      <main class=" w-full flex justify-center items-center flex-col lg:px-10  xl:px-30 ">
+        <div
+          class="w-screen items-center lg:w-nav h-130  sm:h-auto   phone-p-0 lg:p-0   gap-y-10 flex xl:gap-x-3 2xl:gap-x-5  fold2:pl-0  flex-col xl:flex-row md:justify-between   xl:px-0 sm:px-0 ">
+          <div class="w-full fold2:w-6/12 items-center  flex flex-col justify-center px-5 2xl:p-0">
+            <div data-aos="fade-right" data-aos-duration="500"
+              class=" lg:w-105 h-72 md:h-106 rounded-lg lg:rounded-2xl shadow-lg bg-white flex justify-center items-center   shadow-blue-500 overflow-hidden ">
+              <img src="./Assets/pfp/profile.jpg" alt="">
+            </div>
+          </div>
+          <div class=" lg:w-118 xl:w-full h-106 flex flex-col   gap-y-6">
+            <div
+              class="flex flex-col w-full phone:h-90 h-115 lg:w-118 lg:h-104  rounded-sm lg:rounded-2xl shadow-lg shadow-blue-500 relative z-0 p-5 lg:p-14">
+              <div class="content w-full h-50 flex flex-col gap-y-4.25 ">
+                <div data-aos="fade-up" data-aos-duration="200 ">
+                  <h1 data-aos="flip-up" data-aos-duration="2000"
+                    class="text-xl lg:text-2xl text-gray-500 text-nowrap md:pl-10 lg:pl-0">Hi, I am Himanshu Sharma
+                  </h1>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="300">
+                  <h1 data-aos="flip-up" data-aos-duration="3000"
+                    class=" text-2xl lg:text-4xl font-semobold  md:pl-10 lg:pl-0">Capturing the beauty of
+                    your <br>everyday life. </h1>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="300">
+                  <p data-aos="flip-up" data-aos-duration="3000" class="text-gray-500 md:pl-10 lg:pl-0">Step into my
+                    digital universe, where pixels paint the canvas of possibility and design is the language we speak.
+                    Welcome to my portfolio, a curated showcase of my passion for crafting elegant and functional web
+                    experiences. Here, you'll find a fusion of artistry and technology, where every project tells a
+                    story of innovation and user-centric design. Join me on a journey to unlock the potential of your
+                    online presence and bring your vision to life in the digital realm.</p>
+                </div>
+
+              </div>
+              <div
+                class="cta  absolute  w-32 h-13 bottom-5 left-2 md:left-20 md:bottom-15 lg:bottom-13 lg:left-12 flex justify-center items-center  border- border-red-500">
+                <a id="btn"
+                  class="bg-blue-400 px-5 py-2 lg:px-9 lg:py-4 text-white hover:rounded-2xl hover:bg-yellow-400 rounded-md font-semibold  duration-200 shadow-lg shadow-blue-500 flex justify-center items-center text-nowrap"
+                  href="#" id="" class="hireme">Hire Me
+                  <span
+                    class=" w-1.5 h-1.5 lg:w-3 lg:h-3 bg-white absolute right-1.25 top-0  rounded-full animate-ping shadow-md"></span>
+
+                </a>
+              </div>
+              <div class="hidden absolute bottom-13 left-52 lg:flex gap-x-3">
+                <a class="bg-white shadow-md rounded-full px-4  animate-bounce flex justify-center items-center"
+                  href="https://github.com/Himanshu00100?tab=repositories">
+                  <!-- <span class="w-2 h-2 bg-green-400 absolute right-0 top-0 rounded-full animate-ping"></span> -->
+                  <i class="flipitem fa-brands fa-github hover:text-blue-300 duration-200 "></i>
+                </a>
+                <a href="https://www.instagram.com/dz_harryy/?img_index=5">
+                  <i
+                    class="flipitem fa-brands fa-instagram hover:text-blue-300  bg-white shadow-md rounded-full p-4  duration-300"></i>
+                </a>
+                <a href="https://www.linkedin.com/feed/">
+                  <i
+                    class="flipitem fa-brands fa-linkedin-in hover:text-blue-300 duration-300 bg-white shadow-md rounded-full p-4 "></i>
+                </a>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-discord  hover:text-blue-300 duration-300 bg-white shadow-md rounded-full p-4 "></i>
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-118 h-32 lg:h-29 gap-y-2 flex flex-col lg:flex-row md:gap-x-4">
+              <div data-aos="fade-up"
+                class=" w-full lg:w-62 h-full bg-gradient-to-r from-white to-gray-100 rounded-sm lg:rounded-2xl shadow-lg lg:shadow-blue-500 flex start items-center lg:items-start justify-center pl-10  flex-col py-5 lg:py-0">
+                <h1 class="text-2xl font-semibold">Fresher</h1>
+                <p class="text-gray-600"> </p>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1000"
+                class="w-full lg:w-62 h-full bg-gradient-to-r from-white to-gray-100 rounded-sm lg:rounded-2xl shadow-lg lg:shadow-blue-500 flex start lg:items-start justify-center pl-10  items-center flex-col py-5 lg:py-0">
+                <h1 class="text-2xl font-semibold">Web Designer</h1>
+                <p class="text-gray-600">Front-End Developer</p>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="2000"
+                class="w-full lg:w-62 h-full items-center bg-gradient-to-r from-white to-gray-100  rounded-sm lg:rounded-2xl shadow-lg lg:shadow-blue-500 flex start lg:items-start justify-center pl-10  flex-col py-5 lg:py-0">
+                <a id="btn2"
+                  class=" bg-red-500 rounded-md text-white px-5 py-2 lg:px-9 lg:py-4  m-2 lg:m-0  hover:rounded-xl hover:bg-yellow-400  shadow-lg shadow-orange-500 transition-all duration-200 relative"
+                  href="./Assets/Selectors/Himanshu's resume.pdf" download="">Download CV
+                  <span class="w-2 h-2 bg-white rounded-full shadow-md animate-ping absolute right-1 top-1"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- My info section starts here -->
+
+        <div id="myinfo" data-aos="fade-up"
+          class=" flex myinfo w-full h-120 md:h-106 shadow-lg shadow-blue-500 bg-white rounded-lg   mt-90  justify-center relative  ">
+          <h1
+            class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10 ">
+            My Info</h1>
+          <h1 data-aos="fade-up" data-aos-duration="3000"
+            class="text-5xl phone:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold absolute -top-32 lg:-top-40 text-nowrap text-white bg-clip-text text-transparent bg-gradient-to-t from-gray-200 to-white">
+            About Me</h1>
+          <h1
+            class="absolute -top-29 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white drop-shadow-lg  text-4xl md:text-5xl lg:text-7xl  py-8">
+            ABOUT ME</h1>
+          <div class="w-full h-full flex flex-col md:flex-row justify-center items-center rounded-lg overflow-x-hidden">
+            <div
+              class="w-6/12 h-4/6 md:h-full bg-white rounded-l-lg  md:py-4 md:px-10 lg:px-0 lg:py-0 :mx-10 flex flex-col md:flex-row items-center 2xl:pl-20 2xl:pt-24 z-20">
+              <div
+                class="w-full md:h-full  md:rounded-l-lg flex flex-col gap-y-10 items-center 2xl:items-start lg:pt-5 xl:pt-0  py-5 md:py-0 lg:gap-y-6 md:ml-10">
+                <h1 class="text-xl sm:text-4xl font-semibold text-gray-800 text-nowrap text-center sm:text-left">Who Am
+                  I ?</h1>
+                <p class="text-gray-500 text-center md:text-left lg:text-center 2xl:text-left sm:text-xl"> I am a web
+                  designer and a developer as well, if you are looking for someone who
+                  can create stylisy web pages according to your need .
+                  <br>Here I am , just contact me.
+                </p>
+                <div
+                  class="phonew-full h-full flex flex-col justify-center   2xl:flex-row gap-y-5 ml-20  md:gap-y-3 px-5 lg:px-0 lg:gap-y-5 sm:pb-5 md:px-0 lg:ml-36 2xl:ml-0">
+                  <div
+                    class="flex flex-col w-6/12 lg:w-4/12 2xl:w-full h-full gap-y-5 lg:gap-y-8 2xl:gap-y-0  md:gap-y-0 lg:gap-x-50">
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                      class="phone:w-full h-3/6 2xl:h-2/6  flex justify-center lg:justify-normal items-center gap-x-7 lg:gap-x-6 ">
+                      <i class="fa-regular fa-user p-3 md:p-3 lg:p-5 text-xl bg-white shadow-lg rounded-full  relative">
+                      </i>
+                      <div class="w-full h-full  flex flex-col justify-center ">
+                        <div class="flex flex-col justify-center gap-y-1">
+                          <p class="sm:text-lg text-gray-500">Name</p>
+                          <h1 class="sm:text-xl font-semibold text-nowrap">Himanshu Sharma</h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000"
+                      class="w-full h-3/6 2xl:h-2/6 flex justify-center lg:justify-normal items-center gap-x-6 ">
+                      <i class="fa-solid fa-location-dot  p-3 px-4 lg:p-5 text-xl bg-white shadow-lg rounded-full"></i>
+                      <div class="w-full h-full  flex flex-col justify-center">
+                        <div class="flex flex-col gap-y-1">
+                          <p class="sm:text-lg text-gray-500">Address</p>
+                          <h1 class="sm:text-xl font-semibold text-nowrap">New Delhi, Nangloi 110041</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col w-6/12 h-full gap-y-5 md:gap-y-5 lg:gap-y-8 2xl:gap-y-0">
+                    <div
+                      class="w-full h-3/6 2xl:h-2/6 flex justify-center lg:justify-normal items-center gap-x-10 md:gap-x-6">
+                      <i class="fa-solid fa-phone  p-3  lg:p-5 text-xl bg-white shadow-lg rounded-full relative">
+                        <span class="w-2 h-2 absolute right-0 top-0 animate-ping bg-green-400 rounded-full shadow-md">
+                        </span>
+                      </i>
+                      <div class="w-full h-full  flex flex-col justify-center">
+                        <div class="flex flex-col gap-y-1">
+                          <p class="sm:text-lg text-gray-500">Phone</p>
+                          <h1 class="sm:text-xl font-semibold"><a class="hover:text-blue-500 duration-200 text-nowrap"
+                              href="tel:9625597007 ">+91 9625597007</a></h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full h-3/6 2xl:h-2/6 flex justify-center lg:justify-normal  items-center gap-x-6">
+                      <i
+                        class="fa-regular fa-envelope  p-3  lg:p-5 text-xl bg-white shadow-lg rounded-full relative animate-bounce">
+                        <span
+                          class="w-2 h-2 absolute right-0 top-0 animate-ping bg-green-400 rounded-full shadow-md"></span>
+                      </i>
+                      <div class="w-full h-full  flex flex-col justify-center">
+                        <div class="flex flex-col gap-y-1">
+                          <p class="sm:text-lg text-gray-500">Email Address</p>
+                          <h1 class="sm:text-xl font-semibold"><a class="hover:text-blue-500 duration-200 text-nowrap"
+                              href="mailto:max.himanshu.hk888@gmail.com?body=My custom mail body">himanshu.hk888@gmail.com</a>
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full flex md:w-6/12 h-2/10 md:h-full  mt-5  sm:mt-5 md:mt-0   rounded-r-lg  justify-center items-center   lg:p-7 2xl:p-26">
+              <div class="w-6/12 md:w-full h-full  rounded-lg bg-white     flex justify-center  lg:shadow-none ">
+                <img class="" src="./Assets/pfp/pfp2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Myinfo section ends here -->
+
+        <!-- Resume Section starts here -->
+
+        <div data-aos="fade-up"
+          class="myinfo flex md:flex w-full h-[700px] shadow-lg shadow-blue-500 bg-white rounded-lg mt-72 lg:mt-90  justify-center relative mb-32 p-[20px]">
+          <h1
+            class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10     ">
+            My Resume</h1>
+          <h1 data-aos="fade-up" data-aos-duration="3000"
+            class="text-5xl phone:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold absolute -top-32 lg:-top-40 text-nowrap text-white bg-clip-text text-transparent bg-gradient-to-t from-gray-200 to-white">
+            My Resume</h1>
+          <h1
+            class="absolute -top-29 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white drop-shadow-lg  text-4xl md:text-5xl lg:text-7xl   py-8">
+            My Resume</h1>
+
+          <!-- resume contents from here -->
+          <div class="w-full h-full white rounded-lg flex ">
+            <div class="w-[50%] h-full  flex  flex-col gap-y-[30px]">
+              <div class="w-full h-[50%]  flex flex-col items-center gap-y-[15px] pt-[15px]">
+                <span
+                  class="flex justify-center items-center  rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                  <i class="fa-solid fa-hand-holding-heart text-[25px] "></i>
+                  <h3 class="text-[23px]">Hobbies</h3>
+                </span>
+                <div class="w-[70%] h-full bg-white pl-[20px] flex flex-col gap-y-[40px] mt-[30px] ">
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-solid fa-code text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Coding</h1>
+                  </div>
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-regular fa-keyboard text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Learning new Skills</h1>
+                  </div>
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-solid fa-music text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Listening Music</h1>
+                  </div>
+
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-solid fa-map text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Exploring new Places</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-[50%]  flex flex-col items-center gap-y-[15px] pt-[15px]">
+                <span
+                  class="flex justify-center items-center bg-white rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                  <i class="fa-solid fa-chart-line text-[25px]"></i>
+                  <h3 class="text-[23px]">Education & Experiencs</h3>
+                </span>
+                <div class="w-[70%] h-full mt-[30px] flex flex-col pl-[20px] gap-y-[40px]">
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-solid fa-book text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Bachelor of Computer Application ( Persuing )</h1>
+                  </div>
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-solid fa-seedling text-[22px]"></i>
+                    <h1 class="text-[18px] font-[400]">Experience ( Fresher )</h1>
+                  </div>
+                  <div class="flex items-center gap-x-[20px]  ">
+                    <i class="fa-brands fa-react text-[25px]"></i>
+                    <h1 class="text-[18px] font-[400]">Currently working on... ( React js)</h1>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="w-[50%] h-full  bg-white  flex flex-col items-center">
+              <span
+                class="flex justify-center items-center bg-white rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                <i class="fa-solid fa-chart-line text-[25px]"></i>
+                <h3 class="text-[23px]">Projects</h3>
+              </span>
+              <div class="w-[90%] h-full bg-white pt-[30px] flex flex-col gap-y-[20px] mt-[30px]">
+                <div class="flex flex-col pl-[20px]">
+
+
+                  <!-- project 1 from here -->
+                  <div class="flex items-center gap-x-[15px]  ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                    <div class="flex items-center gap-x-[30px]">
+                      <h1 class="text-[18px] font-[400] relative">Loobek Fashion --
+                        <span
+                          class="absolute rotate-[-45deg] px-[10px] left-[-80px] top-[-25px] bg-white shadow-md shadow-blue-500 text-blue-500 text-nowrap text-[16px] rounded-sm font-[400]">
+                          E - commerce </span>
+                      </h1>
+                      <p class="flex flex-col gap-y-[20px]">Created using ( HTML & CSS only)
+                        <br>
+                        <span class="flex gap-x-[15px]  items-center">
+                          <i class="fa-solid fa-link"></i>
+                          <a href="#" class="text-blue-500 hover:text-red-500 duration-300">Loobek Fashion</a>
+                        </span>
+                        <span class="flex gap-x-[15px] items-center">
+                          <i class="fa-brands fa-github"></i>
+                          <a href="https://github.com/Himanshu00100/Project-P"
+                            class="text-blue-500 hover:text-red-500 duration-300">Loobek Fashion github</a>
+                        </span>
+                      </p>
+                    </div>
+
+
+                  </div>
+                  <!-- project 1 ends here -->
+
+
+                  <!-- project 2 starts from here -->
+                  <div class="flex items-center gap-x-[15px] my-[60px] ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                    <div class="flex items-center gap-x-[70px] relative">
+                      <h1 class="text-[18px] font-[400] relative"> Portfolio --
+                        <span
+                          class="absolute rotate-[-45deg] px-[10px] left-[-80px] top-[-17px] bg-white shadow-md shadow-blue-500 text-blue-500 text-nowrap text-[16px] rounded-sm font-[400] ">Personal
+                        </span>
+                      </h1>
+                      <p class="flex flex-col gap-y-[20px]">Created using ( HTML &#160; CSS &#160; Tailwind and Js.)
+                        <br>
+                        <span class="flex gap-x-[10px] items-center">
+                          <i class="fa-solid fa-link"></i>
+                          <a href="https://himanshu00100.github.io/Project-P/"
+                            class="text-blue-500 hover:text-red-500 duration-300">Portfolio</a>
+                        </span>
+                        <span class="flex gap-x-[10px] items-center">
+                          <i class="fa-brands fa-github"></i>
+                          <a href="https://github.com/Himanshu00100/Project-P"
+                            class="text-blue-500 hover:text-red-500 duration-300">Portfolio github</a>
+                        </span>
+                      </p>
+                    </div>
+
+
+                  </div>
+                  <!-- project 2 ends here -->
+
+                  <!-- project 3 starts from here -->
+
+                  <div class="flex items-center gap-x-[15px]  ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                    <div class="flex items-center gap-x-[40px]">
+                      <h1 class="text-[18px] font-[400] relative"> Loobek Sports --
+                        <span
+                          class="absolute rotate-[-45deg] px-[10px] left-[-80px] top-[-25px] bg-white shadow-md shadow-blue-500 text-blue-500 text-nowrap text-[16px] rounded-sm font-[400]">
+                          E - commerce </span>
+                      </h1>
+                      <p class="flex flex-col gap-y-[20px]">Created using ( HTML &#160; CSS &#160; Tailwind and Js &
+                        React)
+                        <br>
+                        ( Currently working...)
+                        <br>
+                        <span class="flex gap-x-[10px] items-center">
+                          <i class="fa-solid fa-link"></i>
+                          <a href="#" class="text-blue-500 hover:text-red-500 duration-300">Loobek Sports</a>
+                        </span>
+                        <span class="flex gap-x-[10px] items-center">
+                          <i class="fa-brands fa-github"></i>
+                          <a href="https://github.com/Himanshu00100/ProjectL"
+                            class="text-blue-500 hover:text-red-500 duration-300">Loobek Sports github</a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- project 3 ends here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Resume Section ends here -->
+
+        <!-- Skills section starts from here  -->
+
+        <div data-aos="fade-up"
+          class="myinfo flex w-screen md:w-full  xl:h-110 shadow-lg shadow-blue-500 bg-white rounded-lg mt-30 lg:mt-80  justify-center relative lg:mb-32 p-2 xl:p3 2xl:p-5">
+          <h1
+            class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10  ">
+            My Skills</h1>
+          <h1 data-aos="fade-up" data-aos-duration="3000"
+            class="text-5xl phone:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold absolute -top-32 lg:-top-40 text-nowrap text-white bg-clip-text text-transparent bg-gradient-to-t from-gray-200 to-white">
+            My Expertise</h1>
+          <h1
+            class="absolute -top-29 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white drop-shadow-lg  text-4xl md:text-5xl lg:text-7xl  py-8">
+            My Expertise</h1>
+
+          <div class="flex w-full h-full bg-gray-200 justify-center rounded-lg  gap-x-4 lg:gap-x-2 p-5">
+            <div data-aos="fade-down" data-aos-duration="400"
+              class="flex w-1/12 sm:w-20  lg:w-2/12 h-full  rounded-t-lg shadow-lg  shadow-red-500  justify-center items-center lg:p-5 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">90%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class="lg:w-10 h-9/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-red-500 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:block sm:w-10 sm:my-1 lg:w-15  p-2 bg-white rounded-full shadow-lg shadow-red-500 duration-400"
+                  src="./Assets/skills/html.png" alt="">
+                <h1
+                  class="absolute bottom-2  lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 sm:px-1  sm:rounded-sm lg:px-6 text-center shadow-lg shadow-blue-500 sm:py-0.5 lg:py-0.75 rotate-90 lg:rotate-0 text-xs  lg:text-base">
+                  HTML
+                </h1>
+
+
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="800"
+              class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg  shadow-lg shadow-sky-500  justify-center items-center lg:p-5 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">90%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class=" lg:w-10 h-9/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-10 sm:my-1 sm:block lg:w-15  p-2 bg-white rounded-full shadow-lg shadow-sky-500 duration-400"
+                  src="./Assets/skills/css.png" alt="">
+                <h1
+                  class="absolute bottom-2 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg sm:py-0.5 sm:px-2 sm:rounded-sm shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base">
+                  CSS</h1>
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="1200"
+              class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg shadow-lg shadow-green-400  justify-center items-center lg:p-6 relative">
+              <div class="w-full h-full  flex justify-end  items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">92%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class="lg:w-10 h-[92%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-green-400 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-9 sm:my-1 sm:block lg:w-14  px-2.5 py-4 bg-white  rounded-full shadow-lg shadow-green-400  duration-400"
+                  src="./Assets/skills//tailwind logo.png" alt="">
+                <h1
+                  class="absolute bottom-0 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base sm:py-0.5 sm:px-1 sm:rounded-sm">
+                  Tailwind</h1>
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="1600"
+              class="flex w-1/12 sm:w-20 lg:w-2/12 h-full rounded-t-lg shadow-lg shadow-yellow-500  justify-center items-center lg:p-5 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">82%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class="lg:w-10 h-[82%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-10 sm:my-1 sm:block lg:w-15  p-2 bg-white  rounded-full shadow-lg shadow-yellow-500 duration-400"
+                  src="./Assets/skills/js.png" alt="">
+                <h1
+                  class="absolute bottom-0 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base sm:py-0.5  sm:rounded-sm">
+                  JavaScript</h1>
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2000"
+              class=" flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg shadow-lg shadow-blue-600  justify-center items-center lg:p-5 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">70%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class="lg:w-10 h-7/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-blue-600 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-10 sm:my-1 sm:block lg:w-15  p-2 bg-white  rounded-full shadow-lg shadow-blue-600 duration-400"
+                  src="./Assets/skills/icons8-jquery-100.png" alt="">
+                <h1
+                  class="absolute bottom-0 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base sm:py-0.5 sm:px-2 sm:rounded-sm">
+                  jQuery</h1>
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2400"
+              class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500   justify-center items-center lg:p-6 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">83%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg ">
+                  <div
+                    class="lg:w-10 h-[83%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-10 sm:my-1 lg:my-0 sm:p-2 sm:block lg:w-15  lg:p-2 bg-white  rounded-full shadow-lg shadow-sky-500 duration-400"
+                  src="./Assets/skills/physics.png" alt="">
+                <h1
+                  class="absolute bottom-0 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base sm:py-0.5 sm:px-2 sm:rounded-sm">
+                  React</h1>
+              </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2800"
+              class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500  justify-center items-center lg:p-5 relative">
+              <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
+                <h1 class="text-sm sm:text-lg lg:text-3xl">80%</h1>
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                  <div
+                    class="lg:w-10 h-8/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500 duration-300">
+                  </div>
+                </div>
+                <img
+                  class="hidden sm:w-10 sm:p-2 sm:my-1 sm:block w-10 lg:w-15  lg:p-2 bg-white shadow-lg rounded-full  shadow-yellow-500 duration-400"
+                  src="./Assets/skills/python.png" alt="">
+                <h1
+                  class="absolute bottom-0 lg:bottom-5 lg:rounded-full bg-gradient-to-r from-white to-blue-500 lg:px-6 text-center shadow-lg shadow-blue-500 lg:py-0.75 rotate-90 lg:rotate-0 text-xs lg:text-base sm:py-0.5 sm:px-2 sm:rounded-sm">
+                  Python</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Skills section ends here -->
+
+
+        <!-- Project section starts from here -->
+
+        <div data-aos="fade-up"
+          class="myinfo flex  w-screen md:w-full  xl:h-140 shadow-lg shadow-blue-500 bg-white rounded-lg  mt-80  justify-center relative lg:mb-32 p-2 2xl:p-5 ">
+          <h1
+            class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10">
+            My Projects</h1>
+          <h1 data-aos="fade-up" data-aos-duration="3000"
+            class="text-5xl phone:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold absolute -top-32 lg:-top-40 text-nowrap text-white bg-clip-text text-transparent bg-gradient-to-t from-gray-200 to-white">
+            My Projects</h1>
+          <h1
+            class="absolute -top-29 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white drop-shadow-lg  text-4xl md:text-5xl lg:text-7xl  py-8">
+            My Projects</h1>
+          <div class="w-full h-full bg-gray-200  justify-center  rounded-lg flex flex-col sm:flex-row  ">
+            <div class="w-full sm:w-6/12 h-full rounded-lg  flex flex-col">
+              <div class="flex flex-col  w-full h-4/6 ">
+                <div class="w-full h-5/6  flex p-2 xl:p-5 md:gap-x-5">
+                  <div class="w-full h-full bg-white rounded-sm md:rounded-lg 2xl:p-5">
+                    <div id="shutterdiv1"
+                      class=" w-full h-full rounded-lg   flex justify-center items-center relative overflow-hidden ">
+                      <a href="https://himanshu00100.github.io/Loobek-Fashion/womens.html" target="_blank">
+                        <img class=" w-full h-full  hover:scale-110 duration-300"
+                          src="./Assets/project/loobek womens.png" alt="">
+                      </a>
+                      <div id="shutter1"
+                        class=" absolute w-full h-23 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center">
+                        <h1 class="text-white text-2xl">Loobek-Fashion </h1>
+                        <p class="text-white">Women's section Using ( HTML & CSS only )</p>
+                      </div>
+                      <a id="arrow1"
+                        class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                        href="#">
+                        <span class=" ">
+                          <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                            style="--fa-rotate-angle: 45deg;"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-3/6 p-2  xl:p-5">
+                  <div class="w-full h-full bg-white  2xl:p-5 rounded-sm md:rounded-lg">
+                    <div id="shutterdiv2"
+                      class="w-full h-full bg-gray-300 rounded-lg flex justify-center items-center relative overflow-hidden">
+                      <a href="https://himanshu00100.github.io/Loobek-Fashion/index.html" target="_blank">
+                        <img class="w-full h-full  hover:scale-110 duration-300" src="./Assets/project/loobek men.png"
+                          alt="">
+                      </a>
+                      <div id="shutter2"
+                        class=" absolute w-full h-20 -bottom-33 bg-black   duration-500 flex flex-col justify-center items-center ">
+                        <h1 class="text-white text-2xl">Loobek-Fashion </h1>
+                        <p class="text-white">Men's section Using ( HTML & CSS only )</p>
+                      </div>
+                      <a id="arrow2"
+                        class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                        href="#">
+                        <span class=" ">
+                          <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                            style="--fa-rotate-angle: 45deg;"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-2/6   rounded-lg flex p-2 xl:p-5">
+                <div class="w-full h-full 2xl:p-5 flex bg-white rounded-sm md:rounded-lg gap-x-4">
+                  <div id="shutterdiv3"
+                    class="w-full h-full bg-gray-300 rounded-lg justify-center flex items-center relative overflow-hidden">
+                    <a href="https://himanshu00100.github.io/L-Drone/" target="_blank">
+                      <img class="w-full h-full scale-110 hover:scale-125 duration-300" src="./Assets/project/loobek-drone.png"
+                        alt="">
+                    </a>
+                    <div id="shutter3"
+                      class=" absolute w-full h-21 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center">
+                      <h1 class="text-white text-2xl">Loobek-Drones </h1>
+                      <p class="text-white">Using ( HTML & CSS only )</p>
+                    </div>
+                    <a id="arrow3"
+                      class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                      href="#">
+                      <span class=" ">
+                        <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                          style="--fa-rotate-angle: 45deg;"></i>
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-6/12 h-full  rounded-lg  flex lg:p-5 flex-col ">
+              <div class="w-full h-2/6  rounded-lg p-2 xl:p-5">
+                <div class="w-full h-full bg-white 2xl:p-5 rounded-md md:rounded-lg flex md:gap-x-5">
+                  <div id="shutterdiv4"
+                    class="w-full h-full bg-white rounded-lg justify-center flex items-center md:p-5 relative overflow-hidden">
+                    <a href="https://github.com/Himanshu00100/ProjectL" target="_blank">
+                      <img class="w-full h-full scale-110 hover:scale-125 duration-300"
+                        src="./Assets/project/loobek -sports.png" alt="">
+                    </a>
+                    <div id="shutter4"
+                      class=" absolute w-full h-21 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center">
+                      <h1 class="text-white text-2xl">Loobek-Sports </h1>
+                      <p class="text-white">Using ( HTML,CSS,Js. Tailwind & React Js. )</p>
+                    </div>
+                    <a id="arrow4"
+                      class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                      href="#">
+                      <span class=" ">
+                        <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                          style="--fa-rotate-angle: 45deg;"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-2/6  rounded-lg p-2 xl:p-5">
+                <div class="w-full h-full bg-white 2xl:p-5 rounded-sm md:rounded-lg flex gap-x-5">
+                  <div id="shutterdiv5"
+                    class="w-full h-full bg-white rounded-lg justify-center flex items-center md:p-5 relative overflow-hidden">
+                    <a href="https://himanshu00100.github.io/Project-P/">
+                      <img class="w-full h-full scale-[1.10] hover:scale-125 duration-300"
+                        src="./Assets/project/portfolio.png" alt="">
+                    </a>
+                    <div id="shutter5"
+                      class=" absolute w-full h-21 -bottom-33 bg-black text-white  duration-500 flex flex-col justify-center items-center">
+                      <h1 class=" text-2xl">Portfolio </h1>
+                      <p class="">Using ( HTML,CSS, Tailwind & Js. )</p>
+                    </div>
+                    <a id="arrow5"
+                      class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                      href="#">
+                      <span class=" ">
+                        <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                          style="--fa-rotate-angle: 45deg;"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-2/6 rounded-lg p-2 lg:p-0 xl:p-5">
+                <div class="w-full h-full bg-white 2xl:p-5 rounded-lg flex gap-x-5">
+                  <div id="shutterdiv6"
+                    class="w-3/6 h-full bg-white rounded-lg justify-center flex items-center xl:p-5 relative overflow-hidden">
+                    <a href="#">
+                      <img class="w-full h-full scale-110 hover:scale-125 duration-300"
+                        src="./Assets/project/pricing section.png" alt="">
+                    </a>
+                    <div id="shutter6"
+                      class=" absolute w-full h-21 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center ">
+                      <h1 class="text-white text-2xl">Cards </h1>
+                      <p class="text-white">Pricing section</p>
+
+                    </div>
+                    <a id="arrow6"
+                      class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                      href="#">
+                      <span class=" ">
+                        <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                          style="--fa-rotate-angle: 45deg;"></i>
+                      </span>
+                    </a>
+
+                  </div>
+                  <div id="shutterdiv7"
+                    class="w-3/6 h-full bg-blue-300 rounded-lg justify-center flex items-center relative overflow-hidden">
+                    <a href="#">
+                      <img class="w-full h-full scale-110 hover:scale-125 duration-300" src="./Assets/project/form2.png"
+                        alt="">
+                    </a>
+                    <div id="shutter7"
+                      class=" absolute w-full h-21 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center">
+                      <h1 class="text-white text-2xl">Forms </h1>
+                      <p class="text-white">Login $ Registration forms</p>
+                    </div>
+                    <a id="arrow7"
+                      class="absolute right-1 top-1 shadow-lg shadow-blue-500 rounded-full bg-black p-1 duration-300 opacity-0"
+                      href="#">
+                      <span class=" ">
+                        <i class="fa-solid fa-arrow-up fa-rotate-by bg-black px-4 py-3.5  text-white rounded-full"
+                          style="--fa-rotate-angle: 45deg;"></i>
+                      </span>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Project section endes here -->
+
+
+        <!-- Contact secction starts here -->
+
+        <div data-aos="fade-up"
+          class="myinfo w-screen md:w-full flex flex-col lg:flex-row items-center   xl:h-120 shadow-lg shadow-blue-500 bg-white rounded-lg  mt-80  justify-center relative  p-8 lg:p-5">
+          <h1
+            class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10">
+            Contact Form</h1>
+          <h1 data-aos="fade-up" data-aos-duration="3000"
+            class="text-5xl phone:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold absolute -top-32 lg:-top-40 text-nowrap text-white bg-clip-text text-transparent bg-gradient-to-t from-gray-200 to-white">
+            Contact Me</h1>
+          <h1
+            class="absolute -top-32 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white drop-shadow-lg  text-4xl md:text-5xl lg:text-7xl  py-8">
+            Contact Me</h1>
+          <div class="w-full lg:w-8/12 h-full flex flex-col  gap-y-10 lg:gap-y-28 rounded-l-lg lg:p-10">
+            <div class="flex flex-col gap-y-8  items-center lg:items-start">
+              <h1
+                class="rounded-full bg-gradient-to-r from-white to-blue-500 w-36 text-center shadow-lg shadow-blue-500 py-0.75 ">
+                GET IN TOUCH</h1>
+              <h1 class="lg:text-4xl text-center ">Message me on whatsapp</h1>
+            </div>
+            <div class="flex flex-col gap-y-5 lg:gap-y-13 mb-8 lg:mb-0">
+              <div
+                class=" lg:w-80 flex phone:pl-15 sm:pl-0 sm:justify-center sm:p-5  items-center bg-white rounded-sm lg:rounded-lg shadow-lg shadow-blue-500 gap-x-3 lg:gap-x-10 p-2 lg:p-5">
+                <i
+                  class="fa-solid fa-phone rounded-full animate-bounce p-3  lg:p-4 lg:text-xl shadow-lg shadow-sky-500 relative">
+                  <span class="w-2 h-2 absolute right-0 top-0 animate-ping bg-green-400 rounded-full shadow-md"></span>
+                </i>
+                <div class="flex  flex-col items-center  lg:items-start">
+                  <div class="flex flex-col gap-y-2">
+                    <p class="">Phone Number</p>
+                    <a class="text-xl lg:text-2xl hover:text-blue-500 duration-300" href="tel:9625597007">+91
+                      9625597007</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class=" lg:w-80 flex phone:pl-15 sm:pl-0 sm:justify-center sm:p-5 items-center bg-white rounded-sm lg:rounded-lg shadow-lg shadow-blue-500 gap-x-3 lg:gap-x-10 p-2 lg:p-5">
+                <i
+                  class="fa-brands fa-whatsapp rounded-full animate-bounce  p-3  lg:p-4 text-2xl shadow-lg shadow-sky-500 relative">
+                  <span class="w-2 h-2 absolute right-0 top-0 animate-ping bg-green-400 rounded-full shadow-md"></span>
+                </i>
+                <div class="flex  flex-col   lg:items-start">
+                  <div class="flex flex-col gap-y-2">
+                    <p class="">Whatsapp Number</p>
+                    <a class="text-xl lg:text-2xl hover:text-blue-500 duration-300"
+                      href="whatsapp://send?text=Hello Himanshu!&phone=+919625597007">+91 9625597007</a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="lg:w-80 flex phone:pl-15 sm:pl-0 sm:justify-center sm:p-5 items-center bg-white rounded-sm lg:rounded-lg shadow-lg shadow-blue-500 gap-x-3 lg:gap-x-10 p-2 lg:p-5">
+                <i
+                  class="fa-regular fa-envelope-open rounded-full p-3  lg:p-4 text-2xl shadow-lg shadow-sky-500 relative ">
+                  <span class="w-2 h-2 absolute right-0 top-0 animate-ping bg-green-400 rounded-full shadow-md"></span>
+                </i>
+                <div class="flex  flex-col  items-start">
+                  <p>Email Address</p>
+                  <a class="text-xl lg:text-xl hover:text-blue-500 duration-300 text-wrap lg:text-nowrap"
+                    href="mailto:max.himanshuofficial00100@gmail.com?body=My custom mail body">himanshuofficial00100</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full h-full  rounded-r-lg">
+            <form id="form" class="form w-full h-full flex flex-col   rounded-r-lg" action="">
+              <div class="w-full lg:h-80  flex flex-col lg:flex-row ">
+                <div class="lg:w-6/12 h-full  flex flex-col  ">
+                  <div class="w-full  h-3/6 flex flex-col justify-center items-start p-5 gap-y-4">
+                    <label class="text-lg" for="inp1">Full Name*</label>
+                    <input
+                      class="w-full lg:w-full text-blue-500 rounded-sm lg:rounded-md h-10  lg:h-13 pl-4 b-1 border border-1 duration-300 focus:outline-none focus:shadow-lg focus:shadow-blue-500 border-black "
+                      id="inp1" name="fname" type="text" required>
+                  </div>
+                  <div class="w-full  h-3/6 flex flex-col justify-start items-start p-5 gap-y-4 ">
+                    <label class="text-lg" for="inp3">Your Email*</label>
+                    <input
+                      class="w-full text-blue-500 rounded-md h-10 lg:h-13 pl-4 b-1 border border-1 duration-300 border-black focus:shadow-lg focus:outline-none focus:shadow-blue-500"
+                      id="inp3" name="number" type="email" required>
+                  </div>
+                </div>
+                <div class="lg:w-6/12 h-full  flex flex-col  ">
+                  <div class="w-full h-3/6 flex flex-col justify-center items-start p-5 gap-y-4 ">
+                    <label class="text-lg" for="inp2">Phone Number*</label>
+                    <input
+                      class="w-full text-blue-500 focus:shadow-lg focus:outline-none duration-300 focus:shadow-blue-500 rounded-md h-13 lg:h-13 pl-4 b-1 border border-1 border-black "
+                      id="inp2" name="mailaddress" type="tel" maxlength="10" required>
+
+                  </div>
+                  <div class="w-full h-3/6 flex flex-col justify-start items-start p-5 gap-y-4 ">
+                    <label class="text-lg" for="inp4">Your Subject*</label>
+                    <input
+                      class="w-full text-blue-500 rounded-md focus:shadow-lg focus:outline-none duration-300 focus:shadow-blue-500 h-10 lg:h-13 pl-4 b-1 border border-1 border-black "
+                      id="inp4" name="subject" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full  lg:p-5 ">
+                <div class="w-full h-full rounded-lg flex flex-col p-5 gap-y-4">
+                  <label class="text-lg" for="textarea">Type Your Message</label>
+                  <textarea
+                    class="text-blue-500 focus:outline-none p-2 lg:pl-5 lg:pt-2 rounded-lg duration-300 focus:shadow-lg focus:shadow-blue-500 b-1 border border-1 border-black"
+                    name="message" id="textarea" cols="30" rows="5"></textarea>
+                </div>
+              </div>
+              <input data-aos="fade-up" data-aos-duration="2000" id="btn3"
+                class="w-30 ml-10   bg-blue-400 px-6 py-2 lg:px-9 lg:py-4 text-white hover:rounded-2xl hover:bg-yellow-400 rounded-sm lg:rounded-md font-semibold  transition-all duration-500 shadow-lg shadow-blue-500 flex justify-center items-center text-nowrap"
+                type="submit" value="Send Message">
+            </form>
+          </div>
+        </div>
+        <!-- Contact me section ends here -->
+
+
+        <!-- text loop from starts -->
+
+      </main>
+      <div
+        class="w-full h-10 textbox    items-center my-5 sm:my-6  md:my-10 lg:my-0 lg:mb-15 lg:mt-10 xl:mt-8  overflow-x-hidden ">
+        <!-- <div class="bg-red-500 overflow-x-hodden">
+          <p class="animate-textloop absolute -right-full   text-2xl  sm:text-3xl md:text-5xl lg:text-7xl  text-nowrap text-gray-400 drop-shadow-lg ">“Digital design is like
+            painting, except the paint never dries.”</p>
+        </div> -->
+      </div>
+
+      <!-- text loop ends -->
+
+
+      <!-- Footer section starts here -->
+      <footer
+        class="w-screen md:w-full flex flex-col  items-center gap-y-2.5   h-105.5 shadow-lg       justify-center relative">
+        <div
+          class="w-full h-80 sm:h-100 justify-center gap-y-5 items-center md:items-start border-b-0.25 border-gray-800 sm:px-10 xl:px-30 sm:pt-15    md:pt-30 flex gap-x-0 lg:gap-x-5 flex-col  sm:flex-row sm:justify-between">
+          <div class="flex flex-col gap-x-5 md:gap-y-6 md:gap-x-10  scale-125">
+            <div class="px-0 py-2 w-6/12 bg-white flex justify-center"><img class="w-15 bg-white "
+                src="./Assets/logo/DZ.png" alt=""></div>
+            <p class="text-gray-300 hidden md:block">Your imagination needs  <br> Creation...
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2000" class="flex flex-col sm:gap-y-3">
+            <h1 class="text-white tab:text-xl sm:text-2xl">Address</h1>
+            <a class="text-gray-400 text-lg mt-5 hover:text-blue-500 duration-200" href="#">New Delhi Nangloi 110041</a>
+            <a href="mailto:max.himanshuofficial00100@gmail.com?body=My custom mail body"
+              class="text-lg text-gray-400 hover:text-blue-500 duration-200">himanshuofficial00100@gmail.com</a>
+            <a href="tel:9625597007" class="text-white tab:text-lg hover:text-blue-500 duration-200">+91 9625597007</a>
+
+          </div>
+          <div class="flex flex-col w-40">
+            <div class=" height-full  flex flex-col justify-center items-center relative">
+
+              <div
+                class="h-full   flex gap-x-5 mt-5 md:mt-0 tab:gap-x-7 sm:flex-col  justify-center items-center gap-y-4 font-semibold text-white">
+                <div id="home" data-aos="flip-up" data-aos-duration="2000" class="home relative">
+                  <h1 class="cursor-pointer hover:text-blue-500 duration-300">Home</h1>
+                  <span class="underline1 absolute w-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+                  <span
+                    class="aboveline1 absolute -top-0.25 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+                </div>
+                <div id="about" data-aos="flip-up" data-aos-duration="3000" class="about relative">
+                  <h1 class="cursor-pointer hover:text-blue-500 duration-300">About</h1>
+                  <span class="underline2 absolute w- h-0.5 bg-blue-500 transition-all duration-300"></span>
+                  <span
+                    class="aboveline2 absolute -top-0.25 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+                </div>
+                <div id="skills" data-aos="flip-up" data-aos-duration="4000" class="skills relative">
+                  <h1 class="cursor-pointer hover:text-blue-500 duration-300">Skills</h1>
+                  <span class="underline3 absolute w-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+                  <span
+                    class="aboveline3 absolute -top-0.25 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+                </div>
+                <div id="contact" data-aos="flip-up" data-aos-duration="5000" class="contact relative">
+                  <h1 class="cursor-pointer hover:text-blue-500 duration-300">Contact</h1>
+                  <span class="underline4 absolute w-0 h-0.5 bg-blue-500 transition-all duration-300"></span>
+                  <span
+                    class="aboveline4 absolute -top-0.25 right-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" class="  w-80 h-20 sm:h-40 hidden  md:flex gap-x-4 relative">
+            <h1 class="absolute text-white md:-top-18 -top-15 text-3xl">Instagram Posts</h1>
+            <div class="w-4/12 h-full flex flex-col gap-y-4">
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded-sm  overflow-hidden shadow-md shadow-blue-500">
+                <a href="#"><img class=" duration-200 scale-150 hover:scale-125"
+                    src="./Assets/project/loobek womens.png" alt=""></a>
+              </div>
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded-sm overflow-hidden shadow-md shadow-blue-500">
+                <img class=" duration-200 w-full h-full scale-150 hover:scale-125"
+                  src="./Assets/project/loobek womens.png" alt="">
+              </div>
+            </div>
+            <div class="w-4/12 h-full flex flex-col gap-y-4">
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded-sm overflow-hidden shadow-md shadow-blue-500">
+                <img class=" duration-200 w-full h-full scale-150 hover:scale-125"
+                  src="./Assets/project/loobek-drone.png" alt="">
+              </div>
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded-sm overflow-hidden shadow-md shadow-blue-500">
+                <img class="transition-transform duration-200 w-full h-full hover:scale-125"
+                  src="./Assets/project/pricing section.png" alt="">
+              </div>
+            </div>
+            <div class="w-4/12 flex flex-col gap-y-4">
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded-sm overflow-hidden shadow-md shadow-blue-500">
+                <img class="transition-transform duration-200 w-full h-full scale-150 hover:scale-125"
+                  src="./Assets/project/loobek men.png" alt="">
+              </div>
+              <div
+                class="h-3/6 w-full flex justify-center items-center bg-white rounded- overflow-hidden shadow-md shadow-blue-500">
+                <img class="transition-transform duration-200 w-full h-full hover:scale-110"
+                  src="./Assets/project/form2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-23 lg:px-10 xl:px-30 flex flex-col sm:flex-row gap-y-2 sm:px-8   sm:justify-between items-center  ">
+          <div class=" mt-3 sm:mt-0  ">
+            <h1 class="text-white ">© 2024. All rights reserved by DZign Pixel</h1>
+          </div>
+          <div class="flex  justify-center items-center gap-x-2.5 mt-3 sm:mt-0  tab:gap-x-4 ">
+            <a class=" bg-white shadow-lg shadow-blue-500  rounded-full p-3 sm:p-4 relative  flex justify-center items-center"
+              href="https://github.com/Himanshu00100?tab=repositories">
+              <i class="flipitem fa-brands fa-github hover:text-blue-300 duration-200 ">
+                <span class="w-2 h-2 absolute right-1 top-1 animate-ping bg-sky-400 rounded-full shadow-md"></span>
+              </i>
+            </a>
+            <a class="bg-white shadow-lg shadow-blue-500  rounded-full p-3 sm:p-4 relative   flex justify-center items-center "
+              href="https://www.instagram.com/dz_harryy/?img_index=5">
+              <i class="flipitem fa-brands fa-instagram hover:text-blue-300 ">
+                <span class="w-2 h-2 absolute right-1 top-1 animate-ping bg-sky-400 rounded-full shadow-md"></span>
+              </i>
+            </a>
+            <a class="bg-white shadow-lg shadow-blue-500  rounded-full p-3 sm:p-4 relative  flex justify-center items-center "
+              href="https://www.linkedin.com/feed/">
+              <i class="flipitem fa-brands fa-linkedin-in hover:text-blue-300 ">
+                <span class="w-2 h-2 absolute right-1 top-1 animate-ping bg-sky-400 rounded-full shadow-md"></span>
+              </i>
+            </a>
+            <a class="bg-white shadow-lg shadow-blue-500  rounded-full p-2.5 sm:p-4 relative animate-bounce flex justify-center items-center "
+              href="#">
+              <i class="fa-brands fa-discord  hover:text-blue-300 duration-300 relative">
+                <!-- <span class="w-2 h-2 absolute right-1 top-1  animate-ping bg-sky-400 rounded-full shadow-md"></span> -->
+              </i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer section ends here -->
+    </div>
+  </div>
+
+
+
+  <script src="./src/jquery-3.7.1.min.js"></script>
+  <script src="./src/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
