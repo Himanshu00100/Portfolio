@@ -50,8 +50,9 @@
     </div>
   </div>
 
+  <!-- success message -->
   <div id="successful"
-    class=" w-full  justify-center items-center fixed top-10 hidden  z-0 transition-all duration-1000 opacity-100">
+    class=" w-full  justify-center items-center fixed top-10 flex  z-0 transition-all duration-1000 opacity-100">
     <div
       class="flex justify-center items-center absolute z-20 outline outline-2 outline-green-500 bg-green-300 p-5 rounded-md gap-x-3">
       <h1 class="font-roboto text-green-black">Message sent successful!!</h1>
@@ -246,8 +247,8 @@
                 </div>
                 <div data-aos="fade-up" data-aos-duration="300">
                   <h1 data-aos="flip-up" data-aos-duration="3000"
-                    class=" text-2xl lg:text-4xl font-semobold  md:pl-10 lg:pl-0">Capturing the beauty of
-                    your <br>everyday life. </h1>
+                    class=" text-2xl lg:text-4xl font-semobold  md:pl-10 lg:pl-0">Discover the beauty of every pixel.
+                  </h1>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="300">
                   <p data-aos="flip-up" data-aos-duration="3000" class="text-gray-500 md:pl-10 lg:pl-0">Step into my
@@ -336,7 +337,7 @@
                 <h1 class="text-xl sm:text-4xl font-semibold text-gray-800 text-nowrap text-center sm:text-left">Who Am
                   I ?</h1>
                 <p class="text-gray-500 text-center md:text-left lg:text-center 2xl:text-left sm:text-xl"> I am a web
-                  designer and a developer as well, if you are looking for someone who
+                  designer , if you are looking for someone who
                   can create stylisy web pages according to your need .
                   <br>Here I am , just contact me.
                 </p>
@@ -413,7 +414,7 @@
         <!-- Resume Section starts here -->
 
         <div data-aos="fade-up"
-          class="myinfo flex md:flex w-full h-[700px] shadow-lg shadow-blue-500 bg-white rounded-lg mt-72 lg:mt-90  justify-center relative mb-32 p-[20px]">
+          class="myinfo flex md:flex w-full 2xl:h-[700px] shadow-lg shadow-blue-500 bg-white rounded-lg mt-72 lg:mt-90  justify-center relative mb-32 p-[20px]">
           <h1
             class="absolute -top-40 px-4  lg:-top-44 lg:px-8 lg:py-0.25 font-semibold bg-transparent border  border-black rounded-full z-10     ">
             My Resume</h1>
@@ -425,15 +426,16 @@
             My Resume</h1>
 
           <!-- resume contents from here -->
-          <div class="w-full h-full white rounded-lg flex ">
-            <div class="w-[50%] h-full  flex  flex-col gap-y-[30px]">
-              <div class="w-full h-[50%]  flex flex-col items-center gap-y-[15px] pt-[15px]">
+          <div class="w-full h-full white rounded-lg flex flex-col md:flex-row ">
+            <div class="w-full md:w-[50%] h-auto md:h-full  flex  flex-col gap-y-[30px]">
+              <!-- hobbies -->
+              <div class="w-full h-auto md:h-[50%]  flex flex-col items-center gap-y-[10px] md:gap-y-[15px] pt-[0px] md:pt-[15px]">
                 <span
-                  class="flex justify-center items-center  rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
-                  <i class="fa-solid fa-hand-holding-heart text-[25px] "></i>
-                  <h3 class="text-[23px]">Hobbies</h3>
+                  class="flex justify-center items-center  rounded-sm w-full sm:w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                  <i class="fa-solid fa-hand-holding-heart text-[20px] md:text-[25px] "></i>
+                  <h3 class=" text-[20px] md:text-[23px]">Hobbies</h3>
                 </span>
-                <div class="w-[70%] h-full bg-white pl-[20px] flex flex-col gap-y-[40px] mt-[30px] ">
+                <div class="w-[70%] h-full bg-white md:pl-[20px] flex flex-col gap-y-[30px] md:gap-y-[40px] mt-[15px] md:mt-[30px] ">
                   <div class="flex items-center gap-x-[20px]  ">
                     <i class="fa-solid fa-code text-[22px]"></i>
                     <h1 class="text-[18px] font-[400]">Coding</h1>
@@ -449,41 +451,45 @@
 
                   <div class="flex items-center gap-x-[20px]  ">
                     <i class="fa-solid fa-map text-[22px]"></i>
-                    <h1 class="text-[18px] font-[400]">Exploring new Places</h1>
+                    <h1 class="text-[18px] font-[400] text-nowrap">Exploring new Places</h1>
                   </div>
                 </div>
               </div>
-              <div class="w-full h-[50%]  flex flex-col items-center gap-y-[15px] pt-[15px]">
+
+              <!-- education and experience -->
+              <div class="w-full h-[50%] flex  2xl:flex flex-col items-center gap-y-[15px] pt-[15px]">
                 <span
-                  class="flex justify-center items-center bg-white rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
-                  <i class="fa-solid fa-chart-line text-[25px]"></i>
-                  <h3 class="text-[23px]">Education & Experiencs</h3>
+                  class="flex justify-center items-center bg-white rounded-sm w-full sm:w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                  <i class="fa-solid fa-chart-line text-[20px] sm:text-[25px]"></i>
+                  <h3 class="text-[20px] sm:text-[23px] text-nowrap">Education & Experiencs</h3>
                 </span>
-                <div class="w-[70%] h-full mt-[30px] flex flex-col pl-[20px] gap-y-[40px]">
+                <div class="w-full  md:w-[70%] h-full mt-[30px]  flex flex-col sm:ml-[150px] md:ml-0 pl-[20px] gap-y-[30px] 2xl:gap-y-[40px]">
                   <div class="flex items-center gap-x-[20px]  ">
                     <i class="fa-solid fa-book text-[22px]"></i>
                     <h1 class="text-[18px] font-[400]">Bachelor of Computer Application ( Persuing )</h1>
                   </div>
-                  <div class="flex items-center gap-x-[20px]  ">
+                  <div class="flex items-center gap-x-[15px] 2xl:gap-x-[20px]  ">
                     <i class="fa-solid fa-seedling text-[22px]"></i>
                     <h1 class="text-[18px] font-[400]">Experience ( Fresher )</h1>
                   </div>
-                  <div class="flex items-center gap-x-[20px]  ">
+                  <div class="flex items-center gap-x-[15px] sm:gap-x-[20px]  ">
                     <i class="fa-brands fa-react text-[25px]"></i>
-                    <h1 class="text-[18px] font-[400]">Currently working on... ( React js)</h1>
+                    <h1 class="text-[18px] font-[400] text-nowrap">Currently working on... <br class="phone:hidden md:flex lg:hidden"> ( React js)</h1>
                   </div>
 
                 </div>
               </div>
 
             </div>
-            <div class="w-[50%] h-full  bg-white  flex flex-col items-center">
+
+            <!-- project section  -->
+            <div class="w-[50%] h-full  bg-white hidden md:flex flex-col items-center ">
               <span
-                class="flex justify-center items-center bg-white rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
+                class="flex justify-center items-center md:mt-[15px] lg:mt-0 bg-white rounded-sm w-[80%] h-[50px] gap-x-[20px] shadow-lg shadow-blue-500">
                 <i class="fa-solid fa-chart-line text-[25px]"></i>
                 <h3 class="text-[23px]">Projects</h3>
               </span>
-              <div class="w-[90%] h-full bg-white pt-[30px] flex flex-col gap-y-[20px] mt-[30px]">
+              <div class="w-[90%] h-full bg-white pt-[30px] flex flex-col lg:gap-y-[20px]  mt-[30px]">
                 <div class="flex flex-col pl-[20px]">
 
 
@@ -500,7 +506,8 @@
                         <br>
                         <span class="flex gap-x-[15px]  items-center">
                           <i class="fa-solid fa-link"></i>
-                          <a href="#" class="text-blue-500 hover:text-red-500 duration-300">Loobek Fashion</a>
+                          <a href="https://himanshu00100.github.io/Loobek-Fashion/womens.html"
+                            class="text-blue-500 hover:text-red-500 duration-300">Loobek Fashion</a>
                         </span>
                         <span class="flex gap-x-[15px] items-center">
                           <i class="fa-brands fa-github"></i>
@@ -598,7 +605,7 @@
               class="flex w-1/12 sm:w-20  lg:w-2/12 h-full  rounded-t-lg shadow-lg  shadow-red-500  justify-center items-center lg:p-5 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">90%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg">
                   <div
                     class="lg:w-10 h-9/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-red-500 duration-300">
                   </div>
@@ -618,7 +625,7 @@
               class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg  shadow-lg shadow-sky-500  justify-center items-center lg:p-5 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">90%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg">
                   <div
                     class=" lg:w-10 h-9/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500 duration-300">
                   </div>
@@ -635,7 +642,7 @@
               class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg shadow-lg shadow-green-400  justify-center items-center lg:p-6 relative">
               <div class="w-full h-full  flex justify-end  items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">92%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg">
                   <div
                     class="lg:w-10 h-[92%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-green-400 duration-300">
                   </div>
@@ -652,7 +659,7 @@
               class="flex w-1/12 sm:w-20 lg:w-2/12 h-full rounded-t-lg shadow-lg shadow-yellow-500  justify-center items-center lg:p-5 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">82%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md;rounded-t-lg">
                   <div
                     class="lg:w-10 h-[82%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500 duration-300">
                   </div>
@@ -669,7 +676,7 @@
               class=" flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-t-lg shadow-lg shadow-blue-600  justify-center items-center lg:p-5 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">70%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg">
                   <div
                     class="lg:w-10 h-7/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-blue-600 duration-300">
                   </div>
@@ -686,7 +693,7 @@
               class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500   justify-center items-center lg:p-6 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">83%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg ">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg ">
                   <div
                     class="lg:w-10 h-[83%] bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-sky-500 duration-300">
                   </div>
@@ -703,7 +710,7 @@
               class="flex w-1/12 sm:w-20 lg:w-2/12 h-full  rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500  justify-center items-center lg:p-5 relative">
               <div class="w-full h-full  flex justify-end items-center flex-col lg:gap-y-7 pb-10">
                 <h1 class="text-sm sm:text-lg lg:text-3xl">80%</h1>
-                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 rounded-t-lg">
+                <div class="w-5 sm:w-6 lg:w-10 h-40 lg:h-100 flex flex-col justify-end bg-blue-300 md:rounded-t-lg">
                   <div
                     class="lg:w-10 h-8/10 bg-blue-500 rounded-sm lg:rounded-t-lg shadow-lg shadow-yellow-500 duration-300">
                   </div>
@@ -791,8 +798,8 @@
                   <div id="shutterdiv3"
                     class="w-full h-full bg-gray-300 rounded-lg justify-center flex items-center relative overflow-hidden">
                     <a href="https://himanshu00100.github.io/L-Drone/" target="_blank">
-                      <img class="w-full h-full scale-110 hover:scale-125 duration-300" src="./Assets/project/loobek-drone.png"
-                        alt="">
+                      <img class="w-full h-full scale-110 hover:scale-125 duration-300"
+                        src="./Assets/project/loobek-drone.png" alt="">
                     </a>
                     <div id="shutter3"
                       class=" absolute w-full h-21 -bottom-33 bg-black  duration-500 flex flex-col justify-center items-center">
@@ -1055,7 +1062,7 @@
           <div class="flex flex-col gap-x-5 md:gap-y-6 md:gap-x-10  scale-125">
             <div class="px-0 py-2 w-6/12 bg-white flex justify-center"><img class="w-15 bg-white "
                 src="./Assets/logo/DZ.png" alt=""></div>
-            <p class="text-gray-300 hidden md:block">Your imagination needs  <br> Creation...
+            <p class="text-gray-300 hidden md:block">Your imagination needs <br> Creation...
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="2000" class="flex flex-col sm:gap-y-3">
