@@ -672,6 +672,42 @@ video {
   top: -25px;
 }
 
+.bottom-\[-\] {
+  bottom: -;
+}
+
+.bottom-\[-10px\] {
+  bottom: -10px;
+}
+
+.bottom-\[5px\] {
+  bottom: 5px;
+}
+
+.bottom-\[50px\] {
+  bottom: 50px;
+}
+
+.bottom-\[-0px\] {
+  bottom: -0px;
+}
+
+.bottom-\[-12px\] {
+  bottom: -12px;
+}
+
+.bottom-\[-px\] {
+  bottom: -px;
+}
+
+.bottom-\[-20pxpx\] {
+  bottom: -20pxpx;
+}
+
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -3120,6 +3156,18 @@ video {
 
   .\32xl\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .\32xl\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .\32xl\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .\32xl\:pl-\[50px\] {
+    padding-left: 50px;
   }
 
   .\32xl\:text-left {
