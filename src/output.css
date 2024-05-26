@@ -688,18 +688,6 @@ video {
   z-index: 50;
 }
 
-.z-\[\] {
-  z-index: ;
-}
-
-.z-\[-10\] {
-  z-index: -10;
-}
-
-.z-\[-20\] {
-  z-index: -20;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
