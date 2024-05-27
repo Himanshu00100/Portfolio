@@ -612,6 +612,10 @@ video {
   bottom: 1.25rem;
 }
 
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
 .left-10 {
   left: 2.5rem;
 }
@@ -670,42 +674,6 @@ video {
 
 .top-\[-25px\] {
   top: -25px;
-}
-
-.bottom-\[-\] {
-  bottom: -;
-}
-
-.bottom-\[-10px\] {
-  bottom: -10px;
-}
-
-.bottom-\[5px\] {
-  bottom: 5px;
-}
-
-.bottom-\[50px\] {
-  bottom: 50px;
-}
-
-.bottom-\[-0px\] {
-  bottom: -0px;
-}
-
-.bottom-\[-12px\] {
-  bottom: -12px;
-}
-
-.bottom-\[-px\] {
-  bottom: -px;
-}
-
-.bottom-\[-20pxpx\] {
-  bottom: -20pxpx;
-}
-
-.bottom-\[-20px\] {
-  bottom: -20px;
 }
 
 .z-0 {
@@ -2205,6 +2173,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
   .sm\:my-1 {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -3142,10 +3114,6 @@ video {
     padding: 0px;
   }
 
-  .\32xl\:p-26 {
-    padding: 108px;
-  }
-
   .\32xl\:p-5 {
     padding: 1.25rem;
   }
@@ -3160,14 +3128,6 @@ video {
 
   .\32xl\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .\32xl\:pl-3 {
-    padding-left: 0.75rem;
-  }
-
-  .\32xl\:pl-\[50px\] {
-    padding-left: 50px;
   }
 
   .\32xl\:text-left {
