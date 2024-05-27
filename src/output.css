@@ -676,6 +676,58 @@ video {
   top: -25px;
 }
 
+.left-\[-90px\] {
+  left: -90px;
+}
+
+.left-\[-100px\] {
+  left: -100px;
+}
+
+.top-\[-5px\] {
+  top: -5px;
+}
+
+.top-\[-15px\] {
+  top: -15px;
+}
+
+.top-\[-px\] {
+  top: -px;
+}
+
+.top-\[0px\] {
+  top: 0px;
+}
+
+.top-\[1px\] {
+  top: 1px;
+}
+
+.top-\[20px\] {
+  top: 20px;
+}
+
+.top-\[-20px\] {
+  top: -20px;
+}
+
+.top-\[-35px\] {
+  top: -35px;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.left-\[-0px\] {
+  left: -0px;
+}
+
+.left-\[-10px\] {
+  left: -10px;
+}
+
 .z-0 {
   z-index: 0;
 }
